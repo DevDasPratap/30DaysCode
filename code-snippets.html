@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DP</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="index.html" class="logo" style="font-size: 30px; color:white;">30 Days Coding x Code Snippets</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" style="color: aqua;">Tech Interview Guide</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </nav>
+    </div>
+
+    <main>
+        <div class="container" style="padding-top: 100px;">
+
+            <h1>Dynamic Programming</h1>
+
+            <p class="lead">Questions</p>
+            <ul class="lead">
+                <li><a href="#question">Edit Distance</a></li>
+                <li><a href="">Best time to buy and sell stocks</a></li>
+                <li><a href="">Decode Ways</a></li>
+                <li><a href="">Best time to buy and sell stocks 4</a></li>
+                <li><a href="">Perfect Squares</a></li>
+                <li><a href="">Buy and sell stocks 3</a></li>
+                <li><a href="">Target Sum</a></li>
+                <li><a href="">Coin change</a></li>
+                <li><a href="">Combination Sum 4</a></li>
+            </ul>
+
+            <hr class="my-4" >
+            <h3>Edit distance</h3>
+            <ul>
+                <li>Question: </li>
+                <li>Reading: </li>
+                <li>Other solutions: </li>
+            </ul>
+
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=blackboard&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=def%2520minDistance%28self%252C%2520word1%252C%2520word2%29%253A%250A%2520%2520%2520%2520%2522%2522%2522Naive%2520recursive%2520solution%2522%2522%2522%250A%2520%2520%2520%2520if%2520not%2520word1%2520and%2520not%2520word2%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%25200%250A%2520%2520%2520%2520if%2520not%2520word1%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520len%28word2%29%250A%2520%2520%2520%2520if%2520not%2520word2%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520len%28word1%29%250A%2520%2520%2520%2520if%2520word1%255B0%255D%2520%253D%253D%2520word2%255B0%255D%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520self.minDistance%28word1%255B1%253A%255D%252C%2520word2%255B1%253A%255D%29%250A%2520%2520%2520%2520insert%2520%253D%25201%2520%252B%2520self.minDistance%28word1%252C%2520word2%255B1%253A%255D%29%250A%2520%2520%2520%2520delete%2520%253D%25201%2520%252B%2520self.minDistance%28word1%255B1%253A%255D%252C%2520word2%29%250A%2520%2520%2520%2520replace%2520%253D%25201%2520%252B%2520self.minDistance%28word1%255B1%253A%255D%252C%2520word2%255B1%253A%255D%29%250A%2520%2520%2520%2520return%2520min%28insert%252C%2520replace%252C%2520delete%29"
+                style="width: 621px; height: 480px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+            <div class="question">
+                <hr class="my-4" >
+                <h3>Best time to Buy and Sell stocks</h3>
+                <ul>
+                    <li>Question: </li>
+                    <li>Reading: </li>
+                    <li>Other solutions: </li>
+                </ul>
+
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=public%2520int%2520maxProfit%28int%255B%255D%2520prices%29%2520%257B%250A%2520%2520%2520%2520int%2520maxCur%2520%253D%25200%252C%2520maxSoFar%2520%253D%25200%253B%250A%2520%2520%2520%2520for%28int%2520i%2520%253D%25201%253B%2520i%2520%253C%2520prices.length%253B%2520i%252B%252B%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520maxCur%2520%253D%2520Math.max%280%252C%2520maxCur%2520%252B%253D%2520prices%255Bi%255D%2520-%2520prices%255Bi-1%255D%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520maxSoFar%2520%253D%2520Math.max%28maxCur%252C%2520maxSoFar%29%253B%250A%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520return%2520maxSoFar%253B%250A%257D%250A"
+                    style="width: 690px; height: 348px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+                <p><a href="">Credits</a></p>
+            </div>
+
+            <hr class="my-4">
+            <h3>Decode Ways</h3>
+            <ul>
+                <li>Question: </li>
+                <li>Reading: </li>
+                <li>Other solutions: </li>
+            </ul>
+
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=auto&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=public%2520int%2520numDecodings%28String%2520s%29%2520%257B%250A%2520%2520%2520%2520%2520%2520if%2520%28s%2520%253D%253D%2520null%2520%257C%257C%2520s.length%28%29%2520%253D%253D%25200%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520return%25200%253B%250A%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520int%2520n%2520%253D%2520s.length%28%29%253B%250A%2520%2520%2520%2520%2520%2520int%255B%255D%2520dp%2520%253D%2520new%2520int%255Bn%2520%252B%25201%255D%253B%250A%2520%2520%2520%2520%2520%2520dp%255B0%255D%2520%253D%25201%253B%250A%2520%2520%2520%2520%2520%2520dp%255B1%255D%2520%253D%2520s.charAt%280%29%2520%21%253D%2520%270%27%2520%253F%25201%2520%253A%25200%253B%250A%2520%2520%2520%2520%2520%2520for%2520%28int%2520i%2520%253D%25202%253B%2520i%2520%253C%253D%2520n%253B%2520i%252B%252B%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520int%2520first%2520%253D%2520Integer.valueOf%28s.substring%28i%2520-%25201%252C%2520i%29%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520int%2520second%2520%253D%2520Integer.valueOf%28s.substring%28i%2520-%25202%252C%2520i%29%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28first%2520%253E%253D%25201%2520%2526%2526%2520first%2520%253C%253D%25209%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520dp%255Bi%255D%2520%252B%253D%2520dp%255Bi-1%255D%253B%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28second%2520%253E%253D%252010%2520%2526%2526%2520second%2520%253C%253D%252026%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520dp%255Bi%255D%2520%252B%253D%2520dp%255Bi-2%255D%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520return%2520dp%255Bn%255D%253B%250A%257D"
+                style="width: 673px; height: 546px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <p><a href="">Credits</a></p>
+
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28187%2C187%2C187%2C1%29&t=solarized+light&wt=sharp&l=auto&ds=true&dsyoff=3px&dsblur=13px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=public%2520int%2520numDecodings%28String%2520s%29%2520%257B%250A%2520%2520%2520%2520%2520%2520return%2520s.length%28%29%253D%253D0%253F0%253AnumDecodings%280%252Cs%29%253B%2520%2520%2520%2520%2520%2520%250A%2520%2520%257D%250A%2520%2520private%2520int%2520numDecodings%28int%2520p%252C%2520String%2520s%29%2520%257B%250A%2520%2520%2520%2520%2520%2520int%2520n%253Ds.length%28%29%253B%250A%2520%2520%2520%2520%2520%2520if%28p%253D%253Dn%29%2520return%25201%253B%250A%2520%2520%2520%2520%2520%2520if%28s.charAt%28p%29%253D%253D%270%27%29%2520return%25200%253B%250A%2520%2520%2520%2520%2520%2520int%2520res%253DnumDecodings%28p%252B1%252Cs%29%253B%250A%2520%2520%2520%2520%2520%2520if%28p%253Cn-1%2526%2526%28s.charAt%28p%29%253D%253D%271%27%257C%257Cs.charAt%28p%29%253D%253D%272%27%2526%2526s.charAt%28p%252B1%29%253C%277%27%29%29%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520res%252B%253DnumDecodings%28p%252B2%252Cs%29%253B%250A%2520%2520%2520%2520%2520%2520return%2520res%253B%250A%2520%2520%257D"
+                style="width: 766px; height: 402px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <p><a href="">Credits</a></p>
+
+            <hr class="my-4">
+            <h3>Best Time to Buy and Sell Stock IV</h3>
+            <p>You are given an integer array prices where prices[i] is the price of a given stock on the ith day.
+                Design an algorithm to find the maximum profit. You may complete at most k transactions.</p>
+            <ul>
+                <li>Question: </li>
+                <li>Reading: </li>
+                <li>Other solutions: </li>
+            </ul>
+
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28121%2C72%2C185%2C1%29&t=verminal&wt=bw&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=def%2520maxProfit%28self%252C%2520k%253A%2520int%252C%2520prices%253A%2520List%255Bint%255D%29%2520-%253E%2520int%253A%250A%2520%2520%2520%2520%2520%2520%2540functools.lru_cache%28None%29%250A%2520%2520%2520%2520%2520%2520def%2520solve%28index%252C%2520k%252C%2520isBought%29%253A%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520index%2520%253E%253D%2520len%28prices%29%2520or%2520k%253D%253D0%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520return%25200%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520result%253Dsolve%28index%252B1%252Ck%252CisBought%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520isBought%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2523%2520sell%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520result%2520%253D%2520max%28result%252C%2520solve%28index%252B1%252C%2520k-1%252C%2520False%29%2520%252B%2520prices%255Bindex%255D%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520else%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2523%2520buy%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520result%2520%253D%2520max%28result%252C%2520solve%28index%252B1%252C%2520k%252C%2520True%29-prices%255Bindex%255D%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520return%2520result%250A%250A%250A%2520%2520%2520%2520%2520%2520n%2520%253D%2520len%28prices%29%250A%2520%2520%2520%2520%2520%2520if%2520n%253C%253D1%253A%2520return%25200%250A%2520%2520%2520%2520%2520%2520if%2520k%253En%252F2%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520res%253D0%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520for%2520i%2520in%2520range%281%252Cn%29%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520res%252B%253Dmax%280%252Cprices%255Bi%255D-prices%255Bi-1%255D%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520return%2520res%250A%2520%2520%2520%2520%2520%2520return%2520solve%280%252Ck%252CFalse%29"
+                style="width: 809px; height: 670px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <p><a href="">Credits</a></p>
+
+
+            <hr class="my-4">
+            <h3>Perfect Squares</h3>
+            <p></p>
+            <ul>
+                <li>Question: </li>
+                <li>Reading: </li>
+                <li>Other solutions: </li>
+            </ul>
+
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2874%2C144%2C226%2C1%29&t=material&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=class%2520Solution%2520%250A%257B%250Apublic%253A%250A%2520%2520%2520%2520int%2520numSquares%28int%2520n%29%2520%250A%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28n%2520%253C%253D%25200%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520return%25200%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520cntPerfectSquares%255Bi%255D%2520%253D%2520the%2520least%2520number%2520of%2520perfect%2520square%2520numbers%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520which%2520sum%2520to%2520i.%2520Note%2520that%2520cntPerfectSquares%255B0%255D%2520is%25200.%250A%2520%2520%2520%2520%2520%2520%2520%2520vector%253Cint%253E%2520cntPerfectSquares%28n%2520%252B%25201%252C%2520INT_MAX%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520cntPerfectSquares%255B0%255D%2520%253D%25200%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520for%2520%28int%2520i%2520%253D%25201%253B%2520i%2520%253C%253D%2520n%253B%2520i%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520For%2520each%2520i%252C%2520it%2520must%2520be%2520the%2520sum%2520of%2520some%2520number%2520%28i%2520-%2520j*j%29%2520and%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520a%2520perfect%2520square%2520number%2520%28j*j%29.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520for%2520%28int%2520j%2520%253D%25201%253B%2520j*j%2520%253C%253D%2520i%253B%2520j%252B%252B%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cntPerfectSquares%255Bi%255D%2520%253D%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520min%28cntPerfectSquares%255Bi%255D%252C%2520cntPerfectSquares%255Bi%2520-%2520j*j%255D%2520%252B%25201%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520cntPerfectSquares.back%28%29%253B%250A%2520%2520%2520%2520%257D%250A%257D%253B"
+                style="width: 805px; height: 774px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <p><a href="https://leetcode.com/problems/perfect-squares/discuss/71488/Summary-of-4-different-solutions-(BFS-DP-static-DP-and-mathematics)"
+                    target="_blank">Credits</a></p>
+
+            <hr class="my-4">
+            <h3>Buy and sell stocks 3</h3>
+            <p></p>
+            <ul>
+                <li>Question: </li>
+                <li>Reading: </li>
+                <li>Other solutions: </li>
+            </ul>
+
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=night-owl&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=int%2520maxProfit%28vector%253Cint%253E%2526%2520prices%29%2520%257B%250A%2509if%28prices.empty%28%29%29%2520return%25200%253B%250A%2509int%2520s1%253D-prices%255B0%255D%252Cs2%253DINT_MIN%252Cs3%253DINT_MIN%252Cs4%253DINT_MIN%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2509for%28int%2520i%253D1%253Bi%253Cprices.size%28%29%253B%252B%252Bi%29%2520%257B%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2509%2509s1%2520%253D%2520max%28s1%252C%2520-prices%255Bi%255D%29%253B%250A%2509%2509s2%2520%253D%2520max%28s2%252C%2520s1%252Bprices%255Bi%255D%29%253B%250A%2509%2509s3%2520%253D%2520max%28s3%252C%2520s2-prices%255Bi%255D%29%253B%250A%2509%2509s4%2520%253D%2520max%28s4%252C%2520s3%252Bprices%255Bi%255D%29%253B%250A%2509%257D%250A%2509return%2520max%280%252Cs4%29%253B%250A%257D"
+                style="width: 614px; height: 396px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+            <p><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/discuss/149383/Easy-DP-solution-using-state-machine-O(n)-time-complexity-O(1)-space-complexity"
+                    target="_blank">Credits</a></p>
+
+            <hr class="my-4">
+            <h3>Target Sum</h3>
+            <p></p>
+            <ul>
+                <li>Question: </li>
+                <li>Reading: </li>
+                <li>Other solutions: </li>
+            </ul>
+
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=one-light&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=def%2520findTargetSumWays%28self%252C%2520nums%252C%2520S%29%253A%250A%2520%2520%2520%2520%2520index%2520%253D%2520len%28nums%29%2520-%25201%250A%2520%2520%2520%2520%2520curr_sum%2520%253D%25200%250A%2520%2520%2520%2520%2520return%2520self.dp%28nums%252C%2520S%252C%2520index%252C%2520curr_sum%29%250A%2520%2520%2520%2520%2520%250A%2520def%2520dp%28self%252C%2520nums%252C%2520target%252C%2520index%252C%2520curr_sum%29%253A%250A%2520%2509%2523%2520Base%2520Cases%250A%2520%2520%2520%2520%2520if%2520index%2520%253C%25200%2520and%2520curr_sum%2520%253D%253D%2520target%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520return%25201%250A%2520%2520%2520%2520%2520if%2520index%2520%253C%25200%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520return%25200%2520%250A%2520%2520%2520%2520%2520%250A%2520%2509%2523%2520Decisions%250A%2520%2520%2520%2520%2520positive%2520%253D%2520self.dp%28nums%252C%2520target%252C%2520index-1%252C%2520curr_sum%2520%252B%2520nums%255Bindex%255D%29%250A%2520%2520%2520%2520%2520negative%2520%253D%2520self.dp%28nums%252C%2520target%252C%2520index-1%252C%2520curr_sum%2520%252B%2520-nums%255Bindex%255D%29%250A%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520return%2520positive%2520%252B%2520negative"
+                style="width: 749px; height: 526px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+
+            <p><a href="https://leetcode.com/problems/target-sum/discuss/455024/DP-IS-EASY!-5-Steps-to-Think-Through-DP-Questions."
+                    target="_blank">Credits</a></p>
+
+
+            <hr class="my-4">
+            <h3>Coin Change</h3>
+            <p></p>
+            <ul>
+                <li>Question: </li>
+                <li>Reading: </li>
+                <li>Other solutions: </li>
+            </ul>
+
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28222%2C171%2C99%2C1%29&t=duotone-dark&wt=none&l=text%2Fx-java&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=public%2520int%2520change%28int%2520amount%252C%2520int%255B%255D%2520coins%29%2520%257B%250A%2520%2520%2520%2520int%255B%255D%255B%255D%2520dp%2520%253D%2520new%2520int%255Bcoins.length%252B1%255D%255Bamount%252B1%255D%253B%250A%2520%2520%2520%2520dp%255B0%255D%255B0%255D%2520%253D%25201%253B%250A%250A%2520%2520%2520%2520for%2520%28int%2520i%2520%253D%25201%253B%2520i%2520%253C%253D%2520coins.length%253B%2520i%252B%252B%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520dp%255Bi%255D%255B0%255D%2520%253D%25201%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520for%2520%28int%2520j%2520%253D%25201%253B%2520j%2520%253C%253D%2520amount%253B%2520j%252B%252B%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520dp%255Bi%255D%255Bj%255D%2520%253D%2520dp%255Bi-1%255D%255Bj%255D%2520%252B%2520%28j%2520%253E%253D%2520coins%255Bi-1%255D%2520%253F%2520dp%255Bi%255D%255Bj-coins%255Bi-1%255D%255D%2520%253A%25200%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520return%2520dp%255Bcoins.length%255D%255Bamount%255D%253B%250A%257D"
+                style="width: 825px; height: 402px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+            <p><a href="https://leetcode.com/problems/coin-change-2/discuss/99212/Knapsack-problem-Java-solution-with-thinking-process-O(nm)-Time-and-O(m)-Space"
+                    target="_blank">Credits</a></p>
+
+
+            <hr class="my-4">
+            <h3>Combination Sum 4</h3>
+            <p></p>
+            <ul>
+                <li>Question: </li>
+                <li>Reading: </li>
+                <li>Other solutions: </li>
+            </ul>
+
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=twilight&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=public%2520int%2520combinationSum4%28int%255B%255D%2520nums%252C%2520int%2520target%29%2520%257B%250A%2520%2520%2520%2520dp%2520%253D%2520new%2520int%255Btarget%2520%252B%25201%255D%253B%250A%2520%2520%2520%2520Arrays.fill%28dp%252C%2520-1%29%253B%250A%2520%2520%2520%2520dp%255B0%255D%2520%253D%25201%253B%250A%2520%2520%2520%2520return%2520helper%28nums%252C%2520target%29%253B%250A%257D%250A%250Aprivate%2520int%2520helper%28int%255B%255D%2520nums%252C%2520int%2520target%29%2520%257B%250A%2520%2520%2520%2520if%2520%28dp%255Btarget%255D%2520%21%253D%2520-1%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520dp%255Btarget%255D%253B%250A%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520int%2520res%2520%253D%25200%253B%250A%2520%2520%2520%2520for%2520%28int%2520i%2520%253D%25200%253B%2520i%2520%253C%2520nums.length%253B%2520i%252B%252B%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28target%2520%253E%253D%2520nums%255Bi%255D%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520res%2520%252B%253D%2520helper%28nums%252C%2520target%2520-%2520nums%255Bi%255D%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520dp%255Btarget%255D%2520%253D%2520res%253B%250A%2520%2520%2520%2520return%2520res%253B%250A%257D"
+                style="width: 587px; height: 586px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+            <p><a href="https://leetcode.com/problems/combination-sum-iv/discuss/85036/1ms-Java-DP-Solution-with-Detailed-Explanation"
+                target="_blank">Credits</a></p>
+
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
